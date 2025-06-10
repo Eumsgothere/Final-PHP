@@ -16,7 +16,7 @@ $cards = [
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Card Shoppe</title>
+  <title>🃏Card Shoppe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
