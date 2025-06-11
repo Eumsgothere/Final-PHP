@@ -1,0 +1,63 @@
+<?php
+$cards = [
+  ["title" => "Obsidian Flames Pokemon TCG", "color" => "142, 249, 252", "image" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVW09f5o3TeMM-_NR-dQmnCFoeK-Ic62sxw&s"],
+  ["title" => "Green Starter CRK TCG", "color" => "142, 252, 204", "image" => "https://cookierunbraverse.com/storage/pack/d4ebc305ba5e9feff393c74307165e79.png.webp"],
+  ["title" => "Purple Starter CRK TCG", "color" => "142, 252, 157", "image" => "https://cookierunbraverse.com/storage/pack/9675f186024e9a4572a1e2676af5fb36.png.webp"],
+  ["title" => "MTG 2019 core set", "color" => "215, 252, 142", "image" => "https://m.media-amazon.com/images/I/81CIm+qYyTL.jpg"],
+  ["title" => "Lorcana Shimmering Skies", "color" => "252, 252, 142", "image" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmoBcPdPWn-gZAeZquvNB4SiR5uOfPF33xOoQVvv0XDYOEHOYk0IUiENsPNyod9R6JCY&usqp=CAU"],
+  ["title" => "Lorcana Ursula's Return", "color" => "252, 208, 142", "image" => "https://cdn.webshopapp.com/shops/352022/files/460823055/650x750x2/disney-lorcana-ursulas-return-starter-deck-anna-he.jpg"],
+  ["title" => "Card Wars Collectors Edition", "color" => "252, 142, 142", "image" => "https://cf.geekdo-images.com/3W7eBmij7f0jCWV91JNOPQ__itemrep/img/sF1DABRr4bq65lEfqOlmIj-sn6k=/fit-in/246x300/filters:strip_icc()/pic2904522.jpg"],
+  ["title" => "Card Wars Hero Pack #1", "color" => "252, 142, 239", "image" => "https://m.media-amazon.com/images/I/81vHZA+wiYL._AC_UF894,1000_QL80_.jpg"],
+  ["title" => "151 Pokemon TCG", "color" => "204, 142, 252", "image" => "https://wafuu.com/cdn/shop/products/pokemon-card-game-scarlett-violet-enhanced-expansion-pack-151-booster-293159_540x.jpg?v=1695256281"],
+  ["title" => "Journey Together Pokemon TCG", "color" => "142, 202, 252", "image" => "https://http2.mlstatic.com/D_NQ_NP_920249-MLA83087467886_032025-O.webp"],
+];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🃏Gachaddict</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Gachaddict</h1>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="shop.php">Shop</a>
+      <a href="Cart.php">Cart</a>
+      <a href="contact.php">Contact</a>
+    </nav>
+  </header>
+  
+  <main class="container">
+  <div>
+    <h1>BEST SELLERS</h1>
+    </div>
+
+    <div class="wrapper">
+      <div class="inner" style="--quantity: <?= count($cards) ?>;">
+        <?php foreach ($cards as $index => $card): ?>
+          <div class="card" style="--index: <?= $index ?>; --color-card: <?= $card['color'] ?>;">
+            <div class="img" style="background-image: url('<?= $card['image'] ?>');">
+              <div class="overlay">
+                <h4><?= htmlspecialchars($card['title']) ?></h4>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <div>
+    <h1>ABOUT US</h1>
+    <P>we are passionate card collectorsszzzz</P>
+    </div>
+
+  </main>
+
+  <footer>
+  <p>&copy; <?= date('Y') ?> Gachaddict. All rights reserved.</p>
+  </footer>
+</body>
+</html>
