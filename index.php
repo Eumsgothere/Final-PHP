@@ -17,16 +17,21 @@ $cards = [
 <head>
   <meta charset="UTF-8">
   <title>🃏Gachaddict</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style_cart.css">
+  <link rel="stylesheet" href="./assets/css/style_shop.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/php/Cart.php">
+  <link rel="stylesheet" href="./assets/php/contact.php">
+  <link rel="stylesheet" href="./assets/php/style.php">
 </head>
 <body>
   <header>
     <h1>Welcome to Gachaddict</h1>
     <nav>
-      <a href="index.php">Home</a>
-      <a href="shop.php">Shop</a>
-      <a href="Cart.php">Cart</a>
-      <a href="contact.php">Contact</a>
+      <a href="./assets/php/index.php">Home</a>
+      <a href="./assets/php/shop.php">Shop</a>
+      <a href="./assets/php/Cart.php">Cart</a>
+      <a href="./assets/php/Contact.php">Contact</a>
     </nav>
   </header>
   
